@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile StatusVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ProfileStatusVC" customModule="ProfileStatus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fsi-p5-cvn" customClass="CircularProgress" customModule="ProfileStatus" customModuleProvider="target">
+                                <rect key="frame" x="107" y="144" width="200" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="qvS-F7-lLb">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="qvS-F7-lLb" firstAttribute="top" secondItem="Fsi-p5-cvn" secondAttribute="top" id="8xk-sQ-I63"/>
+                                    <constraint firstItem="qvS-F7-lLb" firstAttribute="leading" secondItem="Fsi-p5-cvn" secondAttribute="leading" id="HjZ-el-YUN"/>
+                                    <constraint firstItem="qvS-F7-lLb" firstAttribute="height" secondItem="Fsi-p5-cvn" secondAttribute="height" id="RyT-Do-Bk3"/>
+                                    <constraint firstAttribute="height" constant="400" id="W1A-h0-RfP">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="200"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="200"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="200"/>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="qvS-F7-lLb" secondAttribute="trailing" id="Z1Q-OO-1Ra"/>
+                                    <constraint firstItem="qvS-F7-lLb" firstAttribute="width" secondItem="Fsi-p5-cvn" secondAttribute="width" id="elK-DV-d7H"/>
+                                    <constraint firstAttribute="width" constant="400" id="jgl-VE-odQ">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="200"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="200"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="200"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="qvS-F7-lLb" secondAttribute="bottom" id="vGQ-0F-KJD"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHQ-ID-A9z">
+                                <rect key="frame" x="107" y="788" width="200" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="EpB-Qf-Kk0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Fsi-p5-cvn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="36W-A5-aZ3"/>
+                            <constraint firstItem="GHQ-ID-A9z" firstAttribute="trailing" secondItem="Fsi-p5-cvn" secondAttribute="trailing" id="8eP-Zx-ZxM"/>
+                            <constraint firstItem="GHQ-ID-A9z" firstAttribute="width" secondItem="Fsi-p5-cvn" secondAttribute="width" id="8ho-b7-a31"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GHQ-ID-A9z" secondAttribute="bottom" constant="204" id="GzD-oa-6GI">
+                                <variation key="heightClass=compact-widthClass=compact" constant="30"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="24"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="GHQ-ID-A9z" firstAttribute="leading" secondItem="Fsi-p5-cvn" secondAttribute="leading" id="g9e-8d-Yyq"/>
+                            <constraint firstItem="Fsi-p5-cvn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="r7P-BN-Uey">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="80"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                            </constraint>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="nextAvatarButton" destination="GHQ-ID-A9z" id="ikI-TO-CQy"/>
+                        <outlet property="profileImage" destination="qvS-F7-lLb" id="wCn-DW-rFi"/>
+                        <outlet property="progressView" destination="Fsi-p5-cvn" id="Gx1-ND-1KD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="100.44642857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PlaceHolder" width="48" height="48"/>
+    </resources>
+</document>

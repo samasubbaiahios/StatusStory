@@ -1,0 +1,13 @@
+About:
+
+Just open the Project and run it, It will display an avatar in the image placeholder. If you are connected to network it will download the first image and displays on the placeholder. If you tap on "Load next avatar", it will get another image like this it will load 5 series of images. After 5 images it will show the first image again if you tap on the button, like circular fashion. I tried to implement as same as show in the GitHub link .gif image. I've taken Google's (https://www.gstatic.com/webp/gallery) webP help to get series of images, it has 5 images names starts as "1.jpg, 2.jpg, ... 5.jpg.
+
+
+Back ground summary:
+
+We are storing all the images in the Document Manager in the Apps memory nothing but iPhone's Disk memory, these images are being downloaded from Google's WebP services. Image will always load from Document manager, which is efficient way to load or store images in iPhone. This helps app to work even in the Offline mode.
+
+
+Architecture Approach:
+I've used MVVM design to develop this Project, For Data binding I'm using Observable protocol for binding data to View. Using own network classes for network module, and having few helper classes to made few thing re-usable.
+Added few Test cases to View, VM and Model.
